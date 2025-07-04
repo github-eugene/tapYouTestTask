@@ -1,0 +1,44 @@
+[versions]
+agp = "8.10.1"
+kotlin = "2.0.21"
+coreKtx = "1.16.0"
+junit = "4.13.2"
+testJunit = "1.2.1"
+espressoCore = "3.6.1"
+lifecycle = "2.9.1"
+constraint-layout = "2.2.1"
+appcompat = "1.7.1"
+material = "1.12.0"
+retrofit = "2.9.0"
+javax = "1"
+dagger = "2.51"
+navigation="2.7.5"
+
+[libraries]
+core = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+constraint-layout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref="constraint-layout"}
+lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle"}
+lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle"}
+dagger = {group = "com.google.dagger", name = "dagger", version.ref="dagger"}
+dagger-compiler = {group = "com.google.dagger", name = "dagger-compiler", version.ref="dagger"}
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+navigation-fragment = {group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation"}
+navigation-ui = {group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation"}
+javax-inject = { group = "javax.inject", name = "javax.inject", version.ref = "javax" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+test-junit = { group = "androidx.test.ext", name = "junit", version.ref = "testJunit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+navigation-safe-args = {id = "androidx.navigation.safeargs.kotlin", version.ref = "navigation"}
+
+
+

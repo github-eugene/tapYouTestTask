@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.eugene.testtaskfortechspire.ui.fragments.main.MainFragment"
+        android:label="Main">
+        <action
+            android:id="@+id/action_MainFragment_to_GraphFragment"
+            app:destination="@id/graphFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/graphFragment"
+        android:name="com.eugene.testtaskfortechspire.ui.fragments.graph.GraphFragment"
+        android:label="Graph">
+        <argument
+            android:name="points"
+            app:argType="com.eugene.testtaskfortechspire.model.PointUiModel[]" />
+    </fragment>
+</navigation>

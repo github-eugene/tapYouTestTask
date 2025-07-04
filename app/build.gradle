@@ -1,0 +1,65 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'kotlin-parcelize'
+}
+
+android {
+    namespace 'com.eugene.testtaskfortechspire'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.eugene.testtaskfortechspire"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation project(":domain")
+    implementation project(":data")
+
+    implementation libs.core
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.constraint.layout
+    implementation libs.lifecycle.viewmodel
+    implementation libs.lifecycle.livedata
+
+    implementation libs.dagger
+    kapt libs.dagger.compiler
+
+    implementation libs.retrofit
+    implementation libs.retrofit.converter
+
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
+
+    testImplementation libs.junit
+    androidTestImplementation libs.test.junit
+    androidTestImplementation libs.espresso.core
+}

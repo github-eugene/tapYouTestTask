@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TestTaskForTechSpire</string>
+    <string name="main_title_info">"Для получения результата, необходимо ввести число от 1 до 1000 в нижеприведённое поле ввода. Полученные точки будут обозначены на графике и соединены непрерывной линией"</string>
+    <string name="main_go">Поехали!</string>
+    <string name="main_input_number_hint">Ввод</string>
+    <string name="main_no_any_symbol">Пустое поле ввода</string>
+    <string name="main_err_no_connection">Нет доступа в интернет</string>
+    <string name="main_err_server_error">Ошибка сервера</string>
+    <string name="main_err_wrong_count">Неверное количество точек</string>
+    <string name="graph_point_number">Номер точки</string>
+    <string name="value_x">X</string>
+    <string name="value_y">Y</string>
+    <string name="points_on_graph">Точки на графике</string>
+    <string name="save_graph">Сохранить график</string>
+    <string name="graph_smooth_lines">Плавные линии</string>
+    <string name="no_storage_permission_gained">Для сохранения графика необходимо предоставить разрешение к памяти</string>
+    <string name="file_save_success">График успешно сохранён в галерею</string>
+    <string name="file_save_failed">Не удалось сохранить график</string>
+</resources>
